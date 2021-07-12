@@ -1,3 +1,3 @@
-FROM docker/build-push-action@v2
+FROM nginx:1.17
 COPY . /usr/share/nginx/html
 
