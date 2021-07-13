@@ -52,7 +52,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: docker/build-push-action@v1
+      uses: actions/checkout@v2
     - name: Download built artifact
       uses: actions/download-artifact@main
       with:
@@ -64,5 +64,5 @@ jobs:
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
         registry: docker.pkg.github.com
-        repository: sterling463/github-actions-for-packages/tic-tac-toe
+        repository: Sterling463/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
